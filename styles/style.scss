@@ -1,0 +1,27 @@
+@import "./base/root";
+*{
+   scroll-behavior: smooth;
+}
+*, ::before, ::after {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+body{
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+main{
+   display: grid;
+   height: 100vh;
+   width: 100vw;
+   grid-template-rows: 66.75% 33.25%;
+   position: relative;
+   z-index: 1;
+   @media screen and (max-width:1200px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: 100% 100%;
+      width: auto;
+   }
+}
+

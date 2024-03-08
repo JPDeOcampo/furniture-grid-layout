@@ -1,0 +1,61 @@
+section.bottom-section{
+    display: grid;
+    height: 100%;
+    grid-template-columns: 29.16% 1fr 30.55%;
+    grid-template-rows: 100%;
+    overflow: hidden;
+    .about-img {
+        background-position: center;
+        background-size: cover;
+    }
+    .about-img:nth-child(1) {
+        background-image: url(../images/sienna-claret-velvet-shell-chair-audenza-13077584117831.jpg);
+    }
+    .about-img:nth-child(3) {
+        background-image: url(../images/dark-green-bedroom-master-grasscloth-wallpaper-44.jpg);
+    }
+    .about-text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 90px;
+        .about-textw{
+            h3{
+                font-size: 1.8rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 0.5rem;
+            }
+            p{
+                color: $dark-gray;
+                line-height: 1.7rem;
+                color: #a1a1a1;
+                margin: 28px 0;
+                font-size: 0.8rem;
+            }
+           
+        }
+        @media screen and (max-width:600px) {
+            padding: 0 30px;
+            .about-textw{
+                h3{
+                    font-size: 1rem;
+                    letter-spacing: 0.1rem;
+                }
+                p{
+                    line-height: 1.5rem;
+                    margin: 10px 0;
+                }
+                 a{
+                    font-size: 1rem;
+                    font-weight: 500;
+                }
+            }
+         }
+    }
+    @media screen and (max-width:1200px) {
+        grid-template-columns: 100%;
+        grid-template-rows: 33.33% 33.33% 33.33%;
+    }
+  
+}
